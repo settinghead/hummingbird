@@ -5,7 +5,8 @@
   "dependencies": {
     "socket.io": "0.9.6",
     "node-static": "0.5.9",
-    "geoip-no-city-leak": "0.4.9-1"
+    "geoip": "0.4.10",
+    "mysql": "2.0.0-alpha8"
   },
   "domains": [
     "demo.hummingbirdstats.com"
