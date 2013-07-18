@@ -4,7 +4,7 @@ module.exports = config = {
     // Replay some existing traffic logs to get an idea of what Hummingbird
     // looks like.  Change this to false when you're ready to actually use
     // Hummingbird in production.
-    "demo_mode": true,
+    "demo_mode": false,
 
     // Port where the dashboard will be shown.  Change it to false to disable
     // the dashboard. (you might do this if you were integrating
@@ -14,15 +14,21 @@ module.exports = config = {
     // If you want to have the tracking pixel listen on a different port
     // (for instance in order to password-protect your dashboard) you can
     // specify the port to listen on (change from false to port number)
-    "tracking_port" : 8000,
+    "tracking_port" : 80,
 
     // Allow stats to be sent over UDP instead of HTTP.  This works best for
     // sending stats from backend servers within the same datacenter as
     // Hummingbird.  Change to false to disable.
-    "udp_tracking_port" : 8000,
+    "udp_tracking_port" : 80,
 
     // Interface to bind the UDP listener to. Use 127.0.0.1 to only allow
     // other apps on your machine to connect, or 0.0.0.0 to bind to all
     // interfaces and allow any machine to connect.
-    "udp_trackin_address" : "127.0.0.1"
+    "udp_trackin_address" : "127.0.0.1",
+
+    "mysql_host" : "127.0.0.1",
+    "mysql_user" : "root",
+    "mysql_password" : "",
+    "mysql_dbname" : "celeb_counter",
+    "debug" : true
 }
