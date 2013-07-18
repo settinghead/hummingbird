@@ -10,12 +10,13 @@ module.exports = config = {
     // the dashboard. (you might do this if you were integrating
     // Hummingbird into an existing admin interface)
     "dashboard_port" : 8080,
-
+    "dashboard_address" : "127.0.0.1";
     // If you want to have the tracking pixel listen on a different port
     // (for instance in order to password-protect your dashboard) you can
     // specify the port to listen on (change from false to port number)
     "tracking_port" : 80,
-
+    "tracking_address": "127.0.0.1";
+    
     // Allow stats to be sent over UDP instead of HTTP.  This works best for
     // sending stats from backend servers within the same datacenter as
     // Hummingbird.  Change to false to disable.
